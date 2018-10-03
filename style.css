@@ -11,17 +11,15 @@ body{
 
 header{
     grid-area: header;
-    background-color: red;
+    border: solid black 1px;
     text-align: center;
     font-family: 'Great Vibes', cursive;
     font-size: 5vh;
 }
 
-
-
 nav{
     grid-area: nav;
-    background-color: green;
+    border: solid black 1px;
     font-size: 4vh;
     justify-self: start;
     text-align: left;
@@ -29,15 +27,31 @@ nav{
 nav ul{
     list-style-type: none;
     font-size: 5vh;
+    margin-right: 20px;
 }
+
+.topic, .topic-alone{
+    transition: .5s;
+}
+.subTopics{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 3vh;
+}
+
 
 main{
     grid-area: main;
-    background-color: blue;
+    border: solid black 1px;
     font-size: 5vh;
 }
 
 footer{
     grid-area: footer;
-    background-color:yellow;
+    border: solid black 1px;
+}
+
+.active, .topic:hover, .topic-alone:hover {
+    background-color:#ccc;
 }
