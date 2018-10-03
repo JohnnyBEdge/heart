@@ -4,26 +4,37 @@ body{
         "header header header"
         "nav main main"
         "footer footer footer";
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 1fr 80%;
     grid-template-rows: 20% 1fr 15$;
+    font-family: 'Bilbo', cursive, sans-serif;
 }
 
 header{
     grid-area: header;
     background-color: red;
-    justify-self: center;
-    align-self: center;
-    grid-column: 1/ span 2;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vh;
 }
+
+
 
 nav{
     grid-area: nav;
     background-color: green;
+    font-size: 4vh;
+    justify-self: start;
+    text-align: left;
+}
+nav ul{
+    list-style-type: none;
+    font-size: 5vh;
 }
 
 main{
     grid-area: main;
     background-color: blue;
+    font-size: 5vh;
 }
 
 footer{
