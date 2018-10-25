@@ -16,6 +16,7 @@ header{
     text-align: center;
     font-family: 'Great Vibes', cursive;
     font-size: 5vh;
+    height: 75%;
 }
 
 nav{
@@ -26,7 +27,9 @@ nav{
     font-size: 4vh;
     justify-self: start;
     text-align: left;
-}
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 2px 2px 1px black;
+    }
 nav ul{
     list-style-type: none;
     font-size: 5vh;
@@ -53,10 +56,9 @@ main{
     margin-left: 150px;
 }
 
-#heartDiagramImg{
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px;
+#heartContainer{
+    display: grid;
+    justify-content: center;
 }
 
 .textContainer{
@@ -80,4 +82,8 @@ footer{
 
 .active, .topic:hover, .topic-alone:hover {
     background-color:#ccc;
+}
+
+h2{
+    text-align: center;
 }
